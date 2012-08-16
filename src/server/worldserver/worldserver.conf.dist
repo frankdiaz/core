@@ -248,7 +248,7 @@ ChangeWeatherInterval = 600000
 #        Description: Time (in milliseconds) for player save interval.
 #        Default:     900000 - (15 min)
 
-PlayerSaveInterval = 900000
+PlayerSaveInterval = 200000
 
 #
 #    PlayerSave.Stats.MinLevel
@@ -550,7 +550,7 @@ CharLogDump.SeparateDir = ""
 #        Default:     "GM.log" - (Enabled)
 #                     ""       - (Disabled)
 
-GmLogFile = "GM.log"
+GmLogFile = ""
 
 #
 #    GmLogTimestamp
@@ -576,7 +576,7 @@ GmLogPerAccount = 0
 #        Default:     "RA.log" - (Enabled)
 #                     ""       - (Disabled)
 
-RaLogFile = "RA.log"
+RaLogFile = ""
 
 #
 #    ArenaLogFile
@@ -806,7 +806,7 @@ ChatLogs.BattleGround = 0
 #                     16 - (FFA_PVP, Free for all pvp mode like arena PvP in all zones except rest
 #                          activated places and sanctuaries)
 
-GameType = 0
+GameType = 1
 
 #
 #    RealmZone
@@ -841,7 +841,7 @@ GameType = 0
 #                     28 - (QA Server     - any language)
 #                     29 - (CN9           - basic-Latin at create, any at login)
 
-RealmZone = 1
+RealmZone = 4
 
 #
 #    StrictPlayerNames
@@ -1077,7 +1077,7 @@ StartHeroicPlayerLevel = 55
 #        Default:     0
 #                     100 - (1 Silver)
 
-StartPlayerMoney = 0
+StartPlayerMoney = 250000
 
 #
 #    MaxHonorPoints
@@ -1300,7 +1300,7 @@ MaxPrimaryTradeSkill = 2
 #        Range:       0-9
 #        Default:     9
 
-MinPetitionSigns = 9
+MinPetitionSigns = 4
 
 #
 #    MaxGroupXPDistance
@@ -1381,7 +1381,7 @@ BeepAtStart = 1
 #        Example:     "Welcome to John\'s Server@This server runs on Trinity Core."
 #        Default:     "Welcome to a Trinity Core server."
 
-Motd = "Welcome to a Trinity Core server."
+Motd = "Bienvenido a WoW RageSER. Apertura 01 de Agosto: Rates x20 durante todo el mes."
 
 #
 #    Server.LoginInfo
@@ -1573,7 +1573,7 @@ AllowTwoSide.Interaction.Mail = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllowTwoSide.WhoList = 0
+AllowTwoSide.WhoList = 1
 
 #
 #    AllowTwoSide.AddFriend
@@ -1835,7 +1835,7 @@ ChatFlood.MuteTime = 10
 #        Default:     1 - (Enabled, Allow join to channel only if registered in LFG)
 #                     0 - (Disabled, Allow join to channel in any time)
 
-Channel.RestrictedLfg = 1
+Channel.RestrictedLfg = 0
 
 #
 #    Channel.SilentlyGMJoin
@@ -1873,7 +1873,7 @@ ChatLevelReq.Say = 1
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-AllowPlayerCommands = 1
+AllowPlayerCommands = 0
 
 #
 #    PreserveCustomChannels
@@ -2379,8 +2379,8 @@ Death.CorpseReclaimDelay.PvE = 0
 #                     1 - (Enabled, Death.Bones.BattlegroundOrArena)
 #                     0 - (Disabled)
 
-Death.Bones.World               = 1
-Death.Bones.BattlegroundOrArena = 1
+Death.Bones.World               = 0
+Death.Bones.BattlegroundOrArena = 0
 
 #
 #    Die.Command.Mode
@@ -2401,7 +2401,7 @@ Die.Command.Mode = 1
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AutoBroadcast.On = 0
+AutoBroadcast.On = 1
 
 #
 #    AutoBroadcast.Center
@@ -2417,7 +2417,7 @@ AutoBroadcast.Center = 0
 #        Description: Timer (in milliseconds) for auto broadcasts.
 #        Default:     60000 - (60 seconds)
 
-AutoBroadcast.Timer = 60000
+AutoBroadcast.Timer = 300000
 
 #
 ###################################################################################################
@@ -2438,7 +2438,7 @@ Battleground.CastDeserter = 1
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Battleground.QueueAnnouncer.Enable = 0
+Battleground.QueueAnnouncer.Enable = 1
 
 #
 #    Battleground.QueueAnnouncer.PlayerOnly
@@ -2446,7 +2446,7 @@ Battleground.QueueAnnouncer.Enable = 0
 #        Default:     0 - (System message, Anyone can see it)
 #                     1 - (Private, Only queued players can see it)
 
-Battleground.QueueAnnouncer.PlayerOnly = 0
+Battleground.QueueAnnouncer.PlayerOnly = 1
 
 #
 #    Battleground.InvitationType
@@ -2543,7 +2543,7 @@ Arena.AutoDistributeInterval = 7
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Arena.QueueAnnouncer.Enable = 0
+Arena.QueueAnnouncer.Enable = 1
 
 #
 #    Arena.ArenaSeason.ID
@@ -2628,7 +2628,7 @@ Network.TcpNodelay = 1
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-Console.Enable = 1
+Console.Enable = 0
 
 #
 #    Ra.Enable
