@@ -23,10 +23,10 @@
 #include "OutdoorPvPMgr.h"
 #include "Vehicle.h"
 
-#define GOSSIP_HELLO_DEMO1  "Build catapult."
-#define GOSSIP_HELLO_DEMO2  "Build demolisher."
-#define GOSSIP_HELLO_DEMO3  "Build siege engine."
-#define GOSSIP_HELLO_DEMO4  "I cannot build more!"
+#define GOSSIP_HELLO_DEMO1  "Construir Catapulta."
+#define GOSSIP_HELLO_DEMO2  "Construir Demoledor."
+#define GOSSIP_HELLO_DEMO3  "Construir M""\xc3\xa1""quina de Asedio."
+#define GOSSIP_HELLO_DEMO4  """\xc2\xa1""No Puedo Contruir M""\xc3\xa1""s!"
 
 class npc_demolisher_engineerer : public CreatureScript
 {

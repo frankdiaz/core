@@ -6226,7 +6226,7 @@ void Spell::EffectPlayerNotification(SpellEffIndex effIndex)
                 {
                    unitTarget->ToPlayer()->GetSession()->SendNotification(LANG_ZONE_NOFLYZONE);
                    unitTarget->PlayDirectSound(9417); // Fel Reaver sound
-                   unitTarget->MonsterTextEmote("The air is too thin in Wintergrasp for normal flight. You will be ejected in 9 sec.",unitTarget->GetGUID(),true);
+                   unitTarget->MonsterTextEmote("El aire es demasiado fr""\xc3\xad""o para volar en Conquista del Invierno. Te caer""\xc3\xa1""s en 9 segundos.",unitTarget->GetGUID(),true);
                 } else unitTarget->RemoveAura(58730);
               }
             break;
