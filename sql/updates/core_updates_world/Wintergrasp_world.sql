@@ -73,6 +73,11 @@ UPDATE `gameobject_template` SET `faction` = 0, `flags` = 6553632 WHERE `entry` 
 /* Titan Relic remove */
 DELETE FROM `gameobject` WHERE `id`=192829;
 
+/* Temp removed gameobject stopping you getting to the relic
+* 194323 - [Wintergrasp Keep Collision Wall X:5396.209961 Y:2840.010010 Z:432.268005 MapId:571
+* 194162 - [Doodad_WG_Keep_Door01_collision01 X:5397.109863 Y:2841.540039 Z:425.901001 MapId:571]*/
+DELETE FROM gameobject WHERE id IN ('194323', '194162');
+
 /*WG Spell area Data For wg antifly */
 DELETE FROM `spell_area` WHERE spell IN (58730, 57940, 58045);
 INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, `quest_end`, `aura_spell`, `racemask`, `gender`, `autocast`) VALUES
