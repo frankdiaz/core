@@ -25710,17 +25710,17 @@ void Player::CreateWowarmoryFeed(uint32 type, uint32 data, uint32 item_guid, uin
 	*/
 	if (GetGUIDLow() == 0)
 	{
-		sLog->outError(LOG_FILTER_PLAYER, "[Wowarmory]: player is not initialized, unable to create log entry!");
+		sLog->outError("[Wowarmory]: player is not initialized, unable to create log entry!");
 		return;
 	}
 	if (type <= 0 || type > 3)
 	{
-		sLog->outError(LOG_FILTER_PLAYER, "[Wowarmory]: unknown feed type: %d, ignore.", type);
+		sLog->outError("[Wowarmory]: unknown feed type: %d, ignore.", type);
 		return;
 	}
 	if (data == 0)
 	{
-		sLog->outError(LOG_FILTER_PLAYER, "[Wowarmory]: empty data (GUID: %u), ignore.", GetGUIDLow());
+		sLog->outError("[Wowarmory]: empty data (GUID: %u), ignore.", GetGUIDLow());
 		return;
 	}
 	WowarmoryFeedEntry feed;
